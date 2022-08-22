@@ -1,0 +1,13 @@
+{
+    "name": "johnreginald/php-config-repo",
+    "description": "PHP Tool Config Repository",
+    "type": "config-repo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Htet Wai Yan Soe",
+            "email": "johnthelinux@gmail.com"
+        }
+    ],
+    "require": {}
+}
