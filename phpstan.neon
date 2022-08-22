@@ -1,0 +1,10 @@
+parameters:
+    paths:
+        - bin/console
+        - config
+        - public
+        - src
+    level: max
+
+    doctrine:
+            objectManagerLoader: tests/object-manager.php

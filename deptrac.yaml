@@ -1,0 +1,34 @@
+parameters:
+    paths:
+        - ./src
+    exclude_files:
+        - '#.*test.*#'
+    layers:
+        -   name: Controller
+            collectors:
+                -   type: className
+                    regex: .*Controller.*
+
+        -   name: Repository
+            collectors:
+                -   type: className
+                    regex: .*Repository.*
+
+        -   name: Service
+            collectors:
+                -   type: className
+                    regex: .*Service.*
+
+        -   name: Entity
+            collectors:
+                -   type: className
+                    regex: .*App\\Entity\\.*
+
+    ruleset:
+        Controller:
+            - Service
+        Service:
+            - Repository
+        Repository:
+            - Entity
+        Entity: ~

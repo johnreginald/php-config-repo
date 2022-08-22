@@ -1,1 +1,6 @@
 /vendor/
+/.phpcs-cache
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+/.deptrac.cache
+/.idea
